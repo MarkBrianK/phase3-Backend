@@ -10,6 +10,7 @@ gem "rake"
 gem "require_all"
 gem 'uri'
 gem "faker"
+gem 'puma'
 group :development do
   gem "pry"
   gem "sqlite3"
