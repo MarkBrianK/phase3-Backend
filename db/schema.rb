@@ -11,25 +11,25 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2022_09_07_163010) do
-  create_table "driver", force: :cascade do |t|
+  create_table "drivers", force: :cascade do |t|
     t.string "name"
     t.integer "licence_number"
   end
 
-  create_table "garage", force: :cascade do |t|
+  create_table "garages", force: :cascade do |t|
     t.string "name"
     t.string "location"
     t.string "mechanic"
     t.integer "certification_number"
   end
 
-  create_table "vehicle", force: :cascade do |t|
+  create_table "vehicles", force: :cascade do |t|
     t.string "model"
-    t.integer "manufacture_year"
+    t.string "manufacture_year"
     t.string "last_service"
     t.string "next_service"
-    t.boolean "catalytic_converter"
-    t.boolean "vehicle_insurance"
+    t.string "catalytic_converter"
+    t.string "vehicle_insurance"
     t.integer "driver_id"
     t.integer "garage_id"
   end
