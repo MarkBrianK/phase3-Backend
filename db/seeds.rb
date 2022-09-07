@@ -16,6 +16,7 @@ end
 end
 200.times do
   Vehicle.create(
+    vehicle_registration: Faker::Vehicle.vin,
     model: Faker::Vehicle.model,
     manufacture_year: Faker::Date.between(from: '2022-01-01', to: '2022-04-05'),
     last_service: Faker::Date.between(from: '2022-05-01', to: '2022-07-25'),

@@ -32,6 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_07_163010) do
     t.string "vehicle_insurance"
     t.integer "driver_id"
     t.integer "garage_id"
+    t.string "vehicle_registration"
   end
 
 end

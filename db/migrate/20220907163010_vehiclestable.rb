@@ -9,6 +9,7 @@ class Vehiclestable < ActiveRecord::Migration[7.0]
       t.string :vehicle_insurance
       t.integer :driver_id
       t.integer :garage_id
+      t.string :vehicle_registration
     end
   end
 end
