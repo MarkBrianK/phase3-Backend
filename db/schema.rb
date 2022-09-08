@@ -13,14 +13,14 @@
 ActiveRecord::Schema[7.0].define(version: 2022_09_07_163010) do
   create_table "drivers", force: :cascade do |t|
     t.string "name"
-    t.integer "licence_number"
+    t.string "licence_number"
   end
 
   create_table "garages", force: :cascade do |t|
     t.string "name"
     t.string "location"
     t.string "mechanic"
-    t.integer "certification_number"
+    t.string "certification_number"
   end
 
   create_table "vehicles", force: :cascade do |t|

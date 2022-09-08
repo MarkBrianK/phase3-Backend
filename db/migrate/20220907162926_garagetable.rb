@@ -4,7 +4,7 @@ class Garagetable < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :location
       t.string :mechanic
-      t.integer :certification_number
+      t.string :certification_number
     end
   end
 end

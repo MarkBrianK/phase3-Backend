@@ -6,7 +6,8 @@ puts "🌱 Seeding greatness..."
     licence_number: Faker::DrivingLicence.usa_driving_licence('NEW MEXICO')
   )
 end
-45.times do
+
+100.times do
   Garage.create(
     name: Faker::Company.name,
     location: Faker::Address.city,
@@ -14,6 +15,7 @@ end
     certification_number: Faker::Number.number
   )
 end
+
 200.times do
   Vehicle.create(
     vehicle_registration: Faker::Vehicle.vin,
