@@ -2,9 +2,9 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
 
   get '/' do
-    %{
-      Ride and Mind
-    }
+
+       "Ride and Mind"
+
   end
   get '/drivers' do
     drivers = Driver.all
