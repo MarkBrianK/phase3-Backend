@@ -26,7 +26,7 @@ end
     catalytic_converter: "Present",
     vehicle_insurance: "Present",
     driver_id: rand(1..60),
-    garage_id: rand(1..45)
+    garage_id: rand(1..245)
   )
 end
 
